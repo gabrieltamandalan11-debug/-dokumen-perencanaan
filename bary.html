@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manajemen Dokumen Perencanaan</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>📁 Sistem Dokumen Perencanaan</h1>
+    <nav>
+      <ul>
+        <li><a href="#renstra">Renstra</a></li>
+        <li><a href="#renja">Renja</a></li>
+        <li><a href="#rka">RKA</a></li>
+        <li><a href="#dpa">DPA</a></li>
+        <li><a href="#laporan">Laporan</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="upload">
+      <h2>📤 Unggah Dokumen</h2>
+      <form>
+        <label for="file">Pilih File:</label>
+        <input type="file" id="file" name="file" accept=".pdf,.docx">
+        <label for="kategori">Kategori:</label>
+        <select id="kategori" name="kategori">
+          <option value="renstra">Renstra</option>
+          <option value="renja">Renja</option>
+          <option value="rka">RKA</option>
+          <option value="dpa">DPA</option>
+          <option value="laporan">Laporan</option>
+        </select>
+        <button type="submit">Unggah</button>
+      </form>
+    </section>
+
+    <section id="dokumen">
+      <h2>📄 Daftar Dokumen</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nama File</th>
+            <th>Kategori</th>
+            <th>Tahun</th>
+            <th>Unit Kerja</th>
+            <th>Status</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Data dokumen akan ditampilkan di sini -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Inspektorat Pasangkayu</p>
+  </footer>
+</body>
+</html>
